@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.0-9.0.0-2~ubuntu24.10.1*%
+%TF.CreationDate,2025-03-31T19:00:45+02:00*%
+%TF.ProjectId,usb_uart_1V8,7573625f-7561-4727-945f-3156382e6b69,1*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.0-9.0.0-2~ubuntu24.10.1) date 2025-03-31 19:00:45*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X127530000Y-120000000D02*
+X166694000Y-120000000D01*
+X166694000Y-139000000D01*
+X127530000Y-139000000D01*
+X127530000Y-120000000D01*
+M02*

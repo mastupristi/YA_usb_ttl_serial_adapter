@@ -1,4 +1,4 @@
-25610493098929865
+25615723351053053
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103018,6 +103018,27 @@ Varistor VF
 0
 2
 2
+usb_uart_1V8
+KiCad-Logo2_5mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+usb_uart_1V8
+delta_MC
+
+
+0
+0
+0
+usb_uart_1V8
+lcars_mc
+
+
+0
+0
+0
 usc_ttl_1V8
 USB_Micro-AB_Molex_47590-0001
 Micro USB AB receptacle, right-angle inverted (https://www.molex.com/pdm_docs/sd/475900001_sd.pdf)
