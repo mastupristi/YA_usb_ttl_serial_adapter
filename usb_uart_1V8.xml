@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/home/max/udemy/kicad-updated_9/usb_uart_1V8/usb_uart_1V8.kicad_sch</source>
-    <date>2025-04-09T22:09:34+0200</date>
+    <date>2025-04-24T18:54:19+0200</date>
     <tool>Eeschema 9.0.1-9.0.1-0~ubuntu24.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Usb/TTL 1.8V to 5V interface</title>
         <company>Mastupristi Circuitry</company>
-        <rev>2</rev>
+        <rev>2.1</rev>
         <date>2025-04-08</date>
         <source>usb_uart_1V8.kicad_sch</source>
         <comment number="1" value=""/>
@@ -296,33 +296,29 @@
       <property name="ki_keywords" value="L ferrite bead inductor filter"/>
       <property name="ki_fp_filters" value="Inductor_* L_* *Ferrite*"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>7492a8c3-5a3c-4b45-99cc-3962912c71ec</tstamps>
+      <tstamps>885e69bd-cb92-413d-9266-b6f3f820eaf5</tstamps>
     </comp>
     <comp ref="J1">
-      <value>USB_B_Micro</value>
-      <footprint>Connector_USB:USB_Micro-B_Amphenol_10118194-0001LF_Horizontal</footprint>
-      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588905128988446720</datasheet>
-      <description>USB 2.0 1 5P Female -30℃~+80℃ Micro-B SMD USB Connectors</description>
+      <value>USB_C_Receptacle_USB2.0_16P</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
       <fields>
-        <field name="JLCPCB Part#">C132563</field>
-        <field name="Field6">10118194-0001LF</field>
         <field name="JLC">SMD</field>
-        <field name="LCSC">C132563</field>
-        <field name="Footprint">Connector_USB:USB_Micro-B_Amphenol_10118194-0001LF_Horizontal</field>
-        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588905128988446720</field>
-        <field name="Description">USB 2.0 1 5P Female -30℃~+80℃ Micro-B SMD USB Connectors</field>
+        <field name="LCSC">C2765186</field>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
       </fields>
-      <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
-      <property name="JLCPCB Part#" value="C132563"/>
-      <property name="Field6" value="10118194-0001LF"/>
+      <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
       <property name="JLC" value="SMD"/>
-      <property name="LCSC" value="C132563"/>
+      <property name="LCSC" value="C2765186"/>
       <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="usb_uart_1V8.kicad_sch"/>
-      <property name="ki_keywords" value="connector USB micro"/>
-      <property name="ki_fp_filters" value="USB*"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>9e383954-77a5-4f13-9ccc-28890472919b</tstamps>
+      <tstamps>92d8c267-dedb-4ff6-9182-992561430cc1</tstamps>
     </comp>
     <comp ref="J2">
       <value>Conn_02x04_Odd_Even</value>
@@ -572,6 +568,48 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>035f2a8a-a169-4042-bf35-a1edbbc83e95</tstamps>
     </comp>
+    <comp ref="R9">
+      <value>5k1</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</footprint>
+      <description>0402WGF5101TCE</description>
+      <fields>
+        <field name="JLC">0402</field>
+        <field name="LCSC">C25905</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">0402WGF5101TCE</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="JLC" value="0402"/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="usb_uart_1V8.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9336aaae-2027-4b52-bb84-4595b8f7851e</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>5k1</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</footprint>
+      <description>0402WGF5101TCE</description>
+      <fields>
+        <field name="JLC">0402</field>
+        <field name="LCSC">C25905</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">0402WGF5101TCE</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="JLC" value="0402"/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="usb_uart_1V8.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>390bb595-2709-47b4-bb70-18719e23141d</tstamps>
+    </comp>
     <comp ref="U1">
       <value>FT232RNL</value>
       <footprint>Package_SO:SSOP-28_5.3x10.2mm_P0.65mm</footprint>
@@ -621,26 +659,37 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="USB_B_Micro">
-      <description>USB Micro Type B connector</description>
-      <docs>~</docs>
+    <libpart lib="Connector" part="USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
       <footprints>
-        <fp>USB*</fp>
+        <fp>USB*C*Receptacle*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">USB_B_Micro</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
         <field name="Footprint"/>
-        <field name="Datasheet">~</field>
-        <field name="Description">USB Micro Type B connector</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
       </fields>
       <pins>
-        <pin num="1" name="VBUS" type="power_out"/>
-        <pin num="2" name="D-" type="bidirectional"/>
-        <pin num="3" name="D+" type="bidirectional"/>
-        <pin num="4" name="ID" type="passive"/>
-        <pin num="5" name="GND" type="power_out"/>
-        <pin num="6" name="Shield" type="passive"/>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
@@ -756,6 +805,24 @@
         <field name="Footprint"/>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor, small symbol</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -878,11 +945,13 @@
       <node ref="U2" pin="3" pinfunction="VCCA" pintype="power_in"/>
     </net>
     <net code="2" name="/D+" class="Default">
-      <node ref="J1" pin="3" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="J1" pin="A6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="J1" pin="B6" pinfunction="D+" pintype="bidirectional"/>
       <node ref="U1" pin="15" pinfunction="USBD+" pintype="bidirectional"/>
     </net>
     <net code="3" name="/D-" class="Default">
-      <node ref="J1" pin="2" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="J1" pin="A7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="J1" pin="B7" pinfunction="D-" pintype="bidirectional"/>
       <node ref="U1" pin="16" pinfunction="USBD-" pintype="bidirectional"/>
     </net>
     <net code="4" name="/RX" class="Default">
@@ -920,12 +989,17 @@
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
-      <node ref="J1" pin="5" pinfunction="GND" pintype="power_out"/>
-      <node ref="J1" pin="6" pinfunction="Shield" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHIELD" pintype="passive"/>
       <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
       <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="E" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="21" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="25" pinfunction="AGND" pintype="power_in"/>
@@ -949,30 +1023,41 @@
       <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
     </net>
-    <net code="15" name="Net-(J1-VBUS)" class="power,Default">
+    <net code="15" name="Net-(FB1-Pad1)" class="Default">
       <node ref="FB1" pin="1" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS" pintype="passive"/>
     </net>
-    <net code="16" name="Net-(Q1-B)" class="Default">
+    <net code="16" name="Net-(J1-CC1)" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(J1-CC2)" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(Q1-B)" class="Default">
       <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(Q1-C)" class="Default">
+    <net code="19" name="Net-(Q1-C)" class="Default">
       <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
     </net>
-    <net code="18" name="Net-(U2-OE)" class="Default">
+    <net code="20" name="Net-(U2-OE)" class="Default">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="OE" pintype="input"/>
     </net>
-    <net code="19" name="VBUS" class="power,Default">
+    <net code="21" name="VBUS" class="power,Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="FB1" pin="2" pintype="passive"/>
       <node ref="U1" pin="20" pinfunction="VCC" pintype="power_in"/>
     </net>
-    <net code="20" name="VCC_TTL" class="power,Default">
+    <net code="22" name="VCC_TTL" class="power,Default">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -981,43 +1066,46 @@
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="VCCB" pintype="power_in"/>
     </net>
-    <net code="21" name="unconnected-(J1-ID-Pad4)" class="Default">
-      <node ref="J1" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
+    <net code="23" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="22" name="unconnected-(U1-CBUS2-Pad13)" class="Default">
+    <net code="24" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-CBUS2-Pad13)" class="Default">
       <node ref="U1" pin="13" pinfunction="CBUS2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="23" name="unconnected-(U1-CBUS3-Pad14)" class="Default">
+    <net code="26" name="unconnected-(U1-CBUS3-Pad14)" class="Default">
       <node ref="U1" pin="14" pinfunction="CBUS3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="24" name="unconnected-(U1-CBUS4-Pad12)" class="Default">
+    <net code="27" name="unconnected-(U1-CBUS4-Pad12)" class="Default">
       <node ref="U1" pin="12" pinfunction="CBUS4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="25" name="unconnected-(U1-CTS-Pad11)" class="Default">
+    <net code="28" name="unconnected-(U1-CTS-Pad11)" class="Default">
       <node ref="U1" pin="11" pinfunction="CTS" pintype="input+no_connect"/>
     </net>
-    <net code="26" name="unconnected-(U1-DCD-Pad10)" class="Default">
+    <net code="29" name="unconnected-(U1-DCD-Pad10)" class="Default">
       <node ref="U1" pin="10" pinfunction="DCD" pintype="input+no_connect"/>
     </net>
-    <net code="27" name="unconnected-(U1-DCR-Pad9)" class="Default">
+    <net code="30" name="unconnected-(U1-DCR-Pad9)" class="Default">
       <node ref="U1" pin="9" pinfunction="DCR" pintype="input+no_connect"/>
     </net>
-    <net code="28" name="unconnected-(U1-DTR-Pad2)" class="Default">
+    <net code="31" name="unconnected-(U1-DTR-Pad2)" class="Default">
       <node ref="U1" pin="2" pinfunction="DTR" pintype="output+no_connect"/>
     </net>
-    <net code="29" name="unconnected-(U1-OSCI-Pad27)" class="Default">
+    <net code="32" name="unconnected-(U1-OSCI-Pad27)" class="Default">
       <node ref="U1" pin="27" pinfunction="OSCI" pintype="input+no_connect"/>
     </net>
-    <net code="30" name="unconnected-(U1-OSCO-Pad28)" class="Default">
+    <net code="33" name="unconnected-(U1-OSCO-Pad28)" class="Default">
       <node ref="U1" pin="28" pinfunction="OSCO" pintype="output+no_connect"/>
     </net>
-    <net code="31" name="unconnected-(U1-RI-Pad6)" class="Default">
+    <net code="34" name="unconnected-(U1-RI-Pad6)" class="Default">
       <node ref="U1" pin="6" pinfunction="RI" pintype="input+no_connect"/>
     </net>
-    <net code="32" name="unconnected-(U1-RTS-Pad3)" class="Default">
+    <net code="35" name="unconnected-(U1-RTS-Pad3)" class="Default">
       <node ref="U1" pin="3" pinfunction="RTS" pintype="output+no_connect"/>
     </net>
-    <net code="33" name="unconnected-(U1-~{RESET}-Pad19)" class="Default">
+    <net code="36" name="unconnected-(U1-~{RESET}-Pad19)" class="Default">
       <node ref="U1" pin="19" pinfunction="~{RESET}" pintype="input+no_connect"/>
     </net>
   </nets>

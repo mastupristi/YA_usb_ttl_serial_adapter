@@ -58,11 +58,11 @@ This project was developed using **KiCad 9.0.1**.
 - `usb_uart_1V8.pretty/`: local footprint library
 - `gerber/`: Production-ready Gerber + drill files, packed in [grb_usb_uart_1V8.zip](gerber/grb_usb_uart_1V8.zip)
 
-## Photos
+## Rendering
 
-Here is a photo of of of the assembled board in revision v0.1
+Here is a rendering of the board
 
-![v0.1](img/adapter_v0.1.jpg)
+![v0.5](img/rendering_v0.5.png)
 
 ## License
 
